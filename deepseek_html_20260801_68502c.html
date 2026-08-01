@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тёплое письмо</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #f7f0e6, #e8ddd0);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            padding: 20px;
+        }
+        .card {
+            max-width: 660px;
+            background: #fffcf8;
+            border-radius: 36px;
+            padding: 32px 38px;
+            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.2);
+            position: relative;
+            border: 1px solid rgba(255,215,190,0.3);
+        }
+        .card::before {
+            content: '💌';
+            position: absolute;
+            top: -16px;
+            left: 28px;
+            font-size: 34px;
+            filter: drop-shadow(0 6px 8px rgba(0,0,0,0.1));
+        }
+        .message {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #3d2e26;
+            white-space: pre-wrap;
+        }
+        /* Фраза по центру, но меньше основного текста */
+        .centered-line {
+            text-align: center;
+            font-size: 16px;          /* меньше, чем 18px */
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.2px;
+            margin: 6px 0 8px;         /* минимальные отступы */
+            font-family: 'Georgia', serif;
+        }
+        .centered-line .red {
+            color: #d45c6a;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #8a7a6b;
+            text-align: right;
+            border-top: 2px dashed #e5d6c8;
+            padding-top: 16px;
+            font-size: 16px;
+        }
+        .signature span {
+            display: block;
+            font-style: normal;
+            font-weight: 300;
+            color: #b09786;
+            margin-top: 4px;
+        }
+        @media (max-width: 500px) {
+            .card { padding: 24px 20px; }
+            .message { font-size: 16px; }
+            .centered-line { font-size: 15px; margin: 4px 0 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="message">
+Приветик, просто хочется сказать лично, чтобы ты знала —
+
+<div class="centered-line">
+    я <span class="red">скучаю</span> по тебе ❤️
+</div>
+
+Даже по твоему грустному и уставшему взгляду)... Просто поделился с тобой тем, что на душе, безвозвратно. Не хотел тебе говорить, но изнутри будто: *скажи ей, возьми и сделай*.. поэтому, если уж секретничать с кем-то, то только с тобой)
+
+Да, знаю, рискую тебя отдалить вновь и вовсе, чего не хочется, если честно, но уж извини упрямого меня дурака), просто знай — это сообщение на будущее, когда тебе грустно станет — прочти его вновь, чтобы тебе стало теплее... а так я тебе не мешаю и не заставляю думать обо мне, правда, спокойствие рядом) ты можешь дальше работать или отдыхать) Это моё право тебе написать. Тебе решать.. не манипулирую тобой, не пытаюсь получить твоё внимание и прочее) зато тебе, как девочке, не помешает лишний раз приятненькое услышать о себе)... и да, ты была права.. например, в том, что я не замечал себя со стороны.. а ты так хорошо читала меня... видимо, время нужно было для осознания, других действий.. главное, что желание это исправить у меня есть..надеюсь, у тебя все пучком, если нет — плюнь и иди по головам)) Ладно, пойду.. тёплых выходных Саш, родителям приветик тоже)
+        </div>
+        <div class="signature">
+            — Твой добрый собеседник
+            <span>✨ сохрани это, если станет грустно</span>
+        </div>
+    </div>
+</body>
+</html>
